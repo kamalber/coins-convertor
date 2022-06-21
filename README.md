@@ -12,7 +12,7 @@ The service include swagger documentation for api endpoints
 
 ### General
 
--ASP.NET Core 6.2.3
+- ASP.NET Core 6.2.3
 
 ### Frameworks, Libraries and Tools
 
