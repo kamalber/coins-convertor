@@ -17,10 +17,10 @@ The service include swagger documentation for api endpoints
 ### Frameworks, Libraries and Tools
 
 
--JwtBearer 6.0.6
--EntityFramorkCore 6.0.6
--EntityFramorkCore.SqlServer 6.0.6
--EntityFramorkCore.Tools
--newtonsoft.Json 13.0.1
--RestSharp 108.0.1
+- JwtBearer 6.0.6
+- EntityFramorkCore 6.0.6
+- EntityFramorkCore.SqlServer 6.0.6
+- EntityFramorkCore.Tools
+- Newtonsoft.Json 13.0.1
+- RestSharp 108.0.1
 
