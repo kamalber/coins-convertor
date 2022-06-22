@@ -4,6 +4,7 @@ using CoinConvertor.DTO.Requests;
 using CoinConvertor.DTO.Responses;
 using Microsoft.AspNetCore.Authorization;
 using CoinConvertor.Services.Interfaces;
+using CoinConvertor.Decorators;
 
 namespace CoinConvertor.Controllers
 {
@@ -21,6 +22,7 @@ namespace CoinConvertor.Controllers
         }
         [HttpGet]
         [Route("convert")]
+        [LimitRequests(MaxRequests = 5, TimeWindow = 2)]
         public async Task<IActionResult> Convert([FromQuery] string from, [FromQuery] string to, [FromQuery] double amount)
         {
             if (string.IsNullOrEmpty(from) || string.IsNullOrEmpty(to) || amount==0)
@@ -37,7 +39,7 @@ namespace CoinConvertor.Controllers
             {
                 return BadRequest(new ResponseData
                 {
-                    ErrorMessage = "Max Retry Exceeded",
+                    ErrorMessage = "Quota Exceeded",
                     ErrorCode = "115"
                 });
             }

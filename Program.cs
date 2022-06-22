@@ -8,6 +8,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using CoinConvertor.Services.Interfaces;
 using CoinConvertor.Repositories.Interfaces;
+using CoinConvertor.Extensions;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,6 +47,9 @@ builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IConversionRequestRepository, ConversionRequestRepository>();
 builder.Services.AddTransient<IQuotaService, QuotaService>();
 
+builder.Services.AddDistributedMemoryCache();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -58,6 +63,8 @@ app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseRateLimiting();
+
 
 app.MapControllers();
 

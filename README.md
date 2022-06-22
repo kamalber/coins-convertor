@@ -23,4 +23,5 @@ The service include swagger documentation for api endpoints
 - EntityFramorkCore.Tools
 - Newtonsoft.Json 13.0.1
 - RestSharp 108.0.1
+- AspNetCoreRateLimit 4.0.2
 
