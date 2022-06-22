@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using CoinConvertor.DTO.Requests;
 using CoinConvertor.DTO.Responses;
 using CoinConvertor.Services.Interfaces;
+using CoinConvertor.Decorators;
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
