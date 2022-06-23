@@ -1,12 +1,12 @@
 ### Objective
 
-This service allow user to make conversions between different currencies.
-The service  external API to request currency data , the api uuse is the Coinbase API : https://developers.coinbase.com/api/v2#get-exchange-rates
-The service include user signup/singin 
-The service includ authetication using jwt bearer token
-Ther service store user requests in the database
-The service include api rate limit to limit users requests
-The service include swagger documentation for api endpoints
+- This service allow user to make conversions between different currencies.
+- The service use external API to request currency data , the api uuse is the Coinbase API : https://developers.coinbase.com/api/v2#get-exchange-rates
+- The service include user signup/singin 
+- The service includ authetication using jwt bearer token
+- The service store user requests in the database
+- The service include api rate limit to limit users requests
+- The service include swagger documentation for api endpoints
 
 
 
