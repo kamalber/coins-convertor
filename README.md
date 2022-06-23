@@ -1,4 +1,4 @@
-### Objective
+### What is inside
 
 - This service allow user to make conversions between different currencies.
 - The service use external API to request currency data , the api uuse is the Coinbase API : https://developers.coinbase.com/api/v2#get-exchange-rates
