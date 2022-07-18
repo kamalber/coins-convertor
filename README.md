@@ -2,11 +2,11 @@
 
 - This service allow user to make conversions between different currencies.
 - The service use external API (Coin Base api) to request currency data : https://developers.coinbase.com/api/v2#get-exchange-rates
-- The service include user signup/singin 
-- The service includ authetication using jwt bearer token
-- The service store user requests in the database
-- The service include api rate limit to limit users requests
-- The service include swagger documentation for api endpoints
+- User signup/singin 
+- Authetication using jwt bearer token
+- Storing user requests in the database
+- API rate limit to limit users requests
+- Swagger documentation for api endpoints
 
 
 
